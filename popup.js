@@ -20,8 +20,17 @@ document.getElementById("toggle").addEventListener("click", function () {
               priority: 1,
               action: { type: "block" },
               condition: {
-                urlFilter: "||doubleclick.net^",
-                resourceTypes: ["script", "image", "stylesheet"]
+                urlFilter: "*://*.doubleclick.net/*",
+                resourceTypes: [
+                  "main_frame",
+                  "sub_frame",
+                  "stylesheet",
+                  "script",
+                  "image",
+                  "object",
+                  "xmlhttprequest",
+                  "other"
+                ]
               }
             },
             {
@@ -29,8 +38,17 @@ document.getElementById("toggle").addEventListener("click", function () {
               priority: 1,
               action: { type: "block" },
               condition: {
-                urlFilter: "||googlesyndication.com^",
-                resourceTypes: ["script", "image", "stylesheet"]
+                urlFilter: "*://*.googlesyndication.com/*",
+                resourceTypes: [
+                  "main_frame",
+                  "sub_frame",
+                  "stylesheet",
+                  "script",
+                  "image",
+                  "object",
+                  "xmlhttprequest",
+                  "other"
+                ]
               }
             }
           ]

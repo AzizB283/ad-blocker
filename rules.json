@@ -6,8 +6,17 @@
       "type": "block"
     },
     "condition": {
-      "urlFilter": "||doubleclick.net^",
-      "resourceTypes": ["script", "image", "stylesheet"]
+      "urlFilter": "*://*.doubleclick.net/*",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "image",
+        "object",
+        "xmlhttprequest",
+        "other"
+      ]
     }
   },
   {
@@ -17,8 +26,17 @@
       "type": "block"
     },
     "condition": {
-      "urlFilter": "||googlesyndication.com^",
-      "resourceTypes": ["script", "image", "stylesheet"]
+      "urlFilter": "*://*.googlesyndication.com/*",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "image",
+        "object",
+        "xmlhttprequest",
+        "other"
+      ]
     }
   }
 ]
